@@ -1,11 +1,9 @@
 const getWeather = (location) => {
-  fetch('http://localhost:3000/weather?address=' + encodeURI(location)).then(
-    (response) => {
-      response.json().then((data) => {
-        paintUI(data);
-      });
-    }
-  );
+  fetch('/weather?address=' + encodeURI(location)).then((response) => {
+    response.json().then((data) => {
+      paintUI(data);
+    });
+  });
 };
 
 const paintUI = (data) => {
