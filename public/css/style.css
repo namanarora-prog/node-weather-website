@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-size: 100%;
+  background: #fff;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+li {
+  font-size: large;
+  font: bold;
+  padding: 2px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.card {
+  display: none;
+  border: 1px solid grey;
+}

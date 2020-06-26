@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    {{>header}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="" class="input-group">
+                    <input type="text" class="form-control" id="searchField">
+                    <div class="input-group-append"><input type="submit" value="Search" class="btn btn-primary"></div>
+                </form>
+                <div class="card mt-5" id="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4 id="location"></h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 id="temp"></h5>
+                        <h5 id="desc" class="text-capitalize"></h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="/js/custom.js"></script>
+<script src="/3.1/jquery-3.3.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</html>
